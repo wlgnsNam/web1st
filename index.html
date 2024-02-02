@@ -1,22 +1,80 @@
 <!doctype html>
 <html>
     <head>
-        <title>Web 1-01 Quest</title>
+        <title>Web 1-02 Quest</title>
         <meta charset="utf-8">
     </head>
+    <style>
+        div#header {height: 120px; display: flex; justify-content: space-around; align-items: center;}
+        div#header img {margin-top: 0px;}
+        div#header span {margin-top: 27px; font-weight: bold;}
+        div#header span a {text-decoration: none; color: inherit;}
+        div#header span:hover {color:red; text-decoration: underline;}
+        div#main_picture {height: 464px;}
+        div#main_picture img {width: 100%; height: 100%}
+        p#icon_title_text {text-align: center; white-space: pre-line;}
+        p#icon_title_text span.upper{font-size: 75%; font-weight: bold;}
+        p#icon_title_text span.lower{font-size: 150%; font-weight: bold;}
+        div#icon_box {width: 1240px; display: flex; justify-content: space-between; margin-left:auto; margin-right:auto;}
+        div#icon_box > p {display: flex; flex-direction: column; align-items: center; text-align: center; word-break: break-all; 
+            width: 250px; border-bottom: 1px dotted black; padding-bottom: 10px;}
+        div#chefs {width: 100%; height: 304px; display: flex; justify-content: center; background-color: lightgray;}
+        div#chefs div {width: 814px; height: 304px; display: flex;}
+        div#chefs p {width: 500px; height: 304px; margin: 0px; display: flex; justify-content: center; 
+            flex-direction: column; word-break: break-all;}
+    </style>
     <body>
-        <ol>
-            <li><a href="introduce.html" target="_self">Self-introduction</a></li>
-            <li><a href="portfolio.html" target="_self">Portfolio</a></li>
-            <li><a href="note.html" target="_self">Note</a></li>
-        </ol>
-        <h1>Introduce myself...</h1>
-        <p>
-        안녕하세요 저는 아주대학교 사이버 보안학과 4학년 재학생 남지훈입니다.
+        <div id="header">
+            <span><a href="#" target="_self">How it works</a></span>
+            <span><a href="#" target="_self">Gifts</a></span>
+            <span><a href="about.html" target="_self">About</a></span>
+            <img src="logo.png">
+            <span><a href="#" target="_self">Login</a></span>
+            <span><a href="#" target="_self">Members</a></span>
+            <span><a href="#" target="_self">Contacts</a></span>
+        </div>
+        <div id="main_picture">
+            <img src="main.png">
+        </div>
+        <p id="icon_title_text">
+            <span class ="upper">"WHAT'S FOR DINNER"</span>
+            <span class ="lower">FINALLY HAS AN</span>
+            <span class ="lower">EASY ANSWER</span>
         </p>
-        <img src="img2.jpg" width="20%">
-        <p>
-        저는 다양한 개발 분야에 대한 공부를 진행하고 있고 최근에는 웹 개발 공부를 하고 있습니다.
-        </p>
+        <div id="icon_box">
+            <p>
+                <img src="icon1.png">
+                siejfojesfiojseiofj<br>
+                seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+            </p>
+            <p>
+                <img src="icon2.png">
+                siejfojesfiojseiofj<br>
+                seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+            </p>
+            <p>
+                <img src="icon3.png">
+                siejfojesfiojseiofj<br>
+                seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+            </p>
+            <p>
+                <img src="icon4.png">
+                siejfojesfiojseiofj<br>
+                seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+            </p>
+        </div>
+        <div id="chefs">
+            <div>
+                <p>
+                siejfojesfiojseiofj<br>
+                seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef 
+                seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                </p>
+                <img src ="chef.png">
+            </div>
+        </div>
     </body>
 </html>

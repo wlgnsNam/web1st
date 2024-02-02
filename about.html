@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Web 1-02 Quest</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        div#top {width: 1000px; height: 500px; display: flex;}
+        div.top_left {width: 750px; height: 500px; position: relative;}
+        div.top_right {width: 250px; height: 500px;}
+        div.top_right img {vertical-align: bottom;}
+        div#top_box {width: 250px; height: 250px; position: absolute; bottom: 0; background-color: rgba(0, 128, 0, 0.5);}
+        div#top_box p.title{font-size: 150%; font-weight: bold; margin-left: 20px; margin-right: 20px;}
+        div#top_box p.body{font-size: 75%; word-break: break-all; margin-left: 20px; margin-right: 20px;}
+        div#box_all {width: 1000px; height: 500px; display: flex;}
+        div#box_all p.num{margin-left: 20px; font-weight: bold; margin-top: 30px}
+        div.box_left {width: 750px; height: 500px; display: flex; flex-wrap: wrap;}
+        div.box_right {width: 250px; height: 500px; background-color: yellow;}
+        div.box {width:250px; height: 250px;}
+        div.box p.title{font-size: 150%; font-weight: bold; margin-left: 20px; margin-right: 20px; margin-bottom: 0px;}
+        div.box p.body{font-size: 75%; word-break: break-all; margin-left: 20px; margin-right: 20px; margin-top: 0px;}
+        div.box:nth-child(2n-1) {background-color: gray;}
+        div.box:nth-child(2n) {background-color: orange;}
+        div#footer {width: 1000px; height: 40px; background-color: pink;}
+        div.f_left {width: 750px; height: 40px; display: flex; justify-content: space-around; background-color: lightgray;}
+        div.f_left span{margin-top: 10px; margin-bottom: 10px;}
+        div.f_left span:not(:last-child) {padding-right: 20px; border-right: 1px solid orange;}
+    </style>
+    <body>
+        <div id="top">
+            <div class="top_left">
+                <img src="chef_about.png">
+                <div id="top_box">
+                    <p class="title">
+                        GLOBAL<br>
+                        BUSINESS
+                    </p>
+                    <p class="body">
+                    seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef 
+                    seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                    seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                    </p>
+                </div>
+            </div>
+            <div class="top_right">
+                <img src="right1.png">
+                <img src="right2.png">
+            </div>
+        </div>
+        <div id="box_all">
+            <div class="box_left">
+                <div class="box">
+                    <p class="title">TITLE</p>
+                    <p class="body">
+                        seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                        seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                    </p>
+                </div>
+                <div class="box">
+                    <p class="title">TITLE</p>
+                    <p class="body">
+                        seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                        seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
+                    </p>
+                </div>
+                <div class="box">
+                    <p class="num">3</p>
+                </div>
+                <div class="box">
+                    <p class="num">4</p>
+                </div>
+                <div class="box">
+                    <p class="num">5</p>
+                </div> 
+                <div class="box">
+                    <p class="num">6</p>
+                </div> 
+            </div>
+            <div class="box_right">
+                <p class="num">7</p>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="f_left">
+                <span>법적고지</span>
+                <span>이메일무단수집거부</span>
+                <span>이용약관</span>
+                <span>개인정보취급방침</span>
+                <span>고객센터</span>
+                <span>입찰공고</span>
+            </div>
+        </div>
+    </body>
+</html>
