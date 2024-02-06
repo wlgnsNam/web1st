@@ -5,60 +5,68 @@
         <meta charset="utf-8">
     </head>
     <style>
-        div#header {height: 120px; display: flex; justify-content: space-around; align-items: center;}
-        div#header img {margin-top: 0px;}
-        div#header span {margin-top: 27px; font-weight: bold;}
-        div#header span a {text-decoration: none; color: inherit;}
-        div#header span:hover {color:red; text-decoration: underline;}
-        div#main_picture {height: 464px;}
-        div#main_picture img {width: 100%; height: 100%}
-        p#icon_title_text {text-align: center; white-space: pre-line;}
-        p#icon_title_text span.upper{font-size: 75%; font-weight: bold;}
-        p#icon_title_text span.lower{font-size: 150%; font-weight: bold;}
-        div#icon_box {width: 1240px; display: flex; justify-content: space-between; margin-left:auto; margin-right:auto;}
-        div#icon_box > p {display: flex; flex-direction: column; align-items: center; text-align: center; word-break: break-all; 
-            width: 250px; border-bottom: 1px dotted black; padding-bottom: 10px;}
-        div#chefs {width: 100%; height: 304px; display: flex; justify-content: center; background-color: lightgray;}
-        div#chefs div {width: 814px; height: 304px; display: flex;}
-        div#chefs p {width: 500px; height: 304px; margin: 0px; display: flex; justify-content: center; 
-            flex-direction: column; word-break: break-all;}
+        #header {height: 120px; width: 100%; text-align: center;}
+        #header table {width: 100%; text-align: center;}
+        #header img {margin-top: 0px;}
+        #header a {display: inline-block; margin-top: 27px; text-decoration: none; color: inherit;}
+        #header a:hover {color:red; text-decoration: underline;}
+
+        #main_picture {height: 464px;}
+        #main_picture img {width: 100%; height: 100%}
+
+        #icon_title_text {font-size: 150%; font-weight: bold; text-align: center;}
+        #icon_title_text::first-line {font-size: 50%; font-weight: normal;}
+        #icon_box {width: 1240px; text-align: center; margin-left:auto; margin-right:auto; margin-bottom: 10px; }
+        #icon_box > p {display: inline-block; word-break: break-all; 
+            width: 250px; margin: 10px 35px; padding-bottom: 10px; border-bottom: 1px dotted black;}
+        #icon_box > p:first-child {margin-left: 0;}
+        #icon_box > p:last-child {margin-right: 0;}
+
+        #chefs {width: 100%; height: 304px; background-color: lightgray;}
+        #chefs div {width: 814px; height: 304px; margin: auto; display: table;}
+        #chefs p {width: 500px; height: 304px; margin: 0px; display: table-cell; vertical-align: middle; 
+            word-break: break-all;}
     </style>
     <body>
         <div id="header">
-            <span><a href="#" target="_self">How it works</a></span>
-            <span><a href="#" target="_self">Gifts</a></span>
-            <span><a href="about.html" target="_self">About</a></span>
-            <img src="logo.png">
-            <span><a href="#" target="_self">Login</a></span>
-            <span><a href="#" target="_self">Members</a></span>
-            <span><a href="#" target="_self">Contacts</a></span>
+            <table>
+                <tr>
+                    <th><a href="#" target="_self">How it works</a></th>
+                    <th><a href="#" target="_self">Gifts</a></th>
+                    <th><a href="about.html" target="_self">About</a></th>
+                    <th><img src="logo.png"></th>
+                    <th><a href="#" target="_self">Login</a></th>
+                    <th><a href="#" target="_self">Members</a></th>
+                    <th><a href="#" target="_self">Contacts</a></th>
+                </tr>
+            </table>
         </div>
         <div id="main_picture">
             <img src="main.png">
         </div>
         <p id="icon_title_text">
-            <span class ="upper">"WHAT'S FOR DINNER"</span>
-            <span class ="lower">FINALLY HAS AN</span>
-            <span class ="lower">EASY ANSWER</span>
+            "WHAT'S FOR DINNER"<br>
+            FINALLY HAS AN <br>
+            EASY ANSWER
         </p>
         <div id="icon_box">
             <p>
-                <img src="icon1.png">
+                <img src="icon1.png"> <br>
                 siejfojesfiojseiofj<br>
                 seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
             </p>
             <p>
-                <img src="icon2.png">
+                <img src="icon2.png"> <br>
                 siejfojesfiojseiofj<br>
                 seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
             </p>
             <p>
-                <img src="icon3.png">
+                <img src="icon3.png"> <br>
                 siejfojesfiojseiofj<br>
                 seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
             </p>
             <p>
-                <img src="icon4.png">
+                <img src="icon4.png"> <br>
                 siejfojesfiojseiofj<br>
                 seifjosejfoijseiofj seoijfiosejfoiojesfjioiojsef
             </p>

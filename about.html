@@ -5,31 +5,32 @@
         <meta charset="utf-8">
     </head>
     <style>
-        div#top {width: 1000px; height: 500px; display: flex;}
-        div.top_left {width: 750px; height: 500px; position: relative;}
-        div.top_right {width: 250px; height: 500px;}
-        div.top_right img {vertical-align: bottom;}
-        div#top_box {width: 250px; height: 250px; position: absolute; bottom: 0; background-color: rgba(0, 128, 0, 0.5);}
-        div#top_box p.title{font-size: 150%; font-weight: bold; margin-left: 20px; margin-right: 20px;}
-        div#top_box p.body{font-size: 75%; word-break: break-all; margin-left: 20px; margin-right: 20px;}
-        div#box_all {width: 1000px; height: 500px; display: flex;}
-        div#box_all p.num{margin-left: 20px; font-weight: bold; margin-top: 30px}
-        div.box_left {width: 750px; height: 500px; display: flex; flex-wrap: wrap;}
-        div.box_right {width: 250px; height: 500px; background-color: yellow;}
-        div.box {width:250px; height: 250px;}
-        div.box p.title{font-size: 150%; font-weight: bold; margin-left: 20px; margin-right: 20px; margin-bottom: 0px;}
-        div.box p.body{font-size: 75%; word-break: break-all; margin-left: 20px; margin-right: 20px; margin-top: 0px;}
-        div.box:nth-child(2n-1) {background-color: gray;}
-        div.box:nth-child(2n) {background-color: orange;}
-        div#footer {width: 1000px; height: 40px; background-color: pink;}
-        div.f_left {width: 750px; height: 40px; display: flex; justify-content: space-around; background-color: lightgray;}
-        div.f_left span{margin-top: 10px; margin-bottom: 10px;}
-        div.f_left span:not(:last-child) {padding-right: 20px; border-right: 1px solid orange;}
+        #top {width: 1000px; height: 500px;}
+        .top_left {width: 750px; height: 500px; float: left; background-image: url("chef_about.png");}
+        .top_right {width: 250px; height: 500px; float: right;}
+        .top_right img {vertical-align: bottom;}
+        #top_box {width: 250px; height: 250px; margin-top: 250px; background-color: rgba(0, 128, 0, 0.5);}
+        #top_box p.title{font-size: 150%; font-weight: bold; margin-left: 20px; margin-right: 20px;}
+        #top_box p.body{font-size: 75%; word-break: break-all; margin-left: 20px; margin-right: 20px;}
+
+        #box_all {width: 1000px; height: 500px;}
+        #box_all p.num{margin-left: 20px; font-weight: bold; margin-top: 30px}
+        .box_left {width: 750px; height: 500px; float: left;} 
+        .box_right {width: 250px; height: 500px; float: left; background-color: yellow;}
+        .box {width:250px; height: 250px; float: left;}
+        .box p.title{font-size: 150%; font-weight: bold; margin-left: 20px; margin-right: 20px; margin-bottom: 0px;}
+        .box p.body{font-size: 75%; word-break: break-all; margin-left: 20px; margin-right: 20px;}
+        .box:nth-child(2n-1) {background-color: gray;}
+        .box:nth-child(2n) {background-color: orange;}
+
+        #footer {width: 1000px; height: 40px; background-color: pink; margin-top: 0px;}
+        .f_left {width: 750px; height: 40px; overflow: auto; background-color: lightgray;}
+        .f_left table{width: 100%; text-align: center; margin-top: 5px;}
+        .f_left td:not(:last-child) {border-right: 1px solid orange;}
     </style>
     <body>
         <div id="top">
             <div class="top_left">
-                <img src="chef_about.png">
                 <div id="top_box">
                     <p class="title">
                         GLOBAL<br>
@@ -82,12 +83,16 @@
         </div>
         <div id="footer">
             <div class="f_left">
-                <span>법적고지</span>
-                <span>이메일무단수집거부</span>
-                <span>이용약관</span>
-                <span>개인정보취급방침</span>
-                <span>고객센터</span>
-                <span>입찰공고</span>
+                <table>
+                    <tr>
+                        <td>법적고지</td>
+                        <td>이메일무단수집거부</td>
+                        <td>이용약관</td>
+                        <td>개인정보취급방침</td>
+                        <td>고객센터</td>
+                        <td>입찰공고</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </body>
