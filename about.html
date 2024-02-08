@@ -25,8 +25,9 @@
 
         #footer {width: 1000px; height: 40px; background-color: pink; margin-top: 0px;}
         .f_left {width: 750px; height: 40px; overflow: auto; background-color: lightgray;}
-        .f_left table{width: 100%; text-align: center; margin-top: 5px;}
-        .f_left td:not(:last-child) {border-right: 1px solid orange;}
+        .f_left ul {list-style: none; padding: 0px; margin-top: 5px; margin-bottom: 0px; text-align: center;}
+        .f_left li {display: inline-block; margin-right : 10px; padding-right: 10px; border-right: 1px solid orange;}
+        .f_left li:last-child {border-right: none;}
     </style>
     <body>
         <div id="top">
@@ -83,16 +84,14 @@
         </div>
         <div id="footer">
             <div class="f_left">
-                <table>
-                    <tr>
-                        <td>법적고지</td>
-                        <td>이메일무단수집거부</td>
-                        <td>이용약관</td>
-                        <td>개인정보취급방침</td>
-                        <td>고객센터</td>
-                        <td>입찰공고</td>
-                    </tr>
-                </table>
+                <ul>
+                    <li>법적고지</li>
+                    <li>이메일무단수집거부</li>
+                    <li>이용약관</li>
+                    <li>개인정보취급방침</li>
+                    <li>고객센터</li>
+                    <li>입찰공고</li>
+                </ul>
             </div>
         </div>
     </body>
