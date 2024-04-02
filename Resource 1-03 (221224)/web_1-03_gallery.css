@@ -1,0 +1,37 @@
+* {margin: 0px; padding: 0px;}
+body {font-family: 'Verdana';}
+
+header {width: 100%; overflow: hidden;}
+#header_base {width: 1180px; height: 120px; margin: 0px auto; top: 0; left: 0; right: 0; 
+    border-bottom: 2px solid #000; position: fixed; z-index: 1000; background-color: white;}
+#header_base > h1 {margin: 0px; left: 10px; bottom: 15px; position: absolute; opacity: 70%;}
+#header_base > h1 > a {text-decoration: none; color: inherit;}
+#utility_bar {float: right; overflow: hidden; right: 30px; top: 20px; position: relative;}
+#utility_bar > ul {overflow:hidden;}
+#utility_bar > ul > li {list-style: none; float: left; margin: 0px 10px; color:gray;}
+#utility_bar > ul > li > a {text-decoration: none; color: inherit;}
+#global_navigation_bar {float: right; overflow: hidden; right: 0px; bottom: 0px; position: absolute;}
+#global_navigation_bar > ul {overflow:hidden;}
+#global_navigation_bar > ul > li {list-style: none; float: left; padding: 20px 30px; font-weight: bold; opacity: 70%;}
+#global_navigation_bar > ul > li > a {text-decoration: none; color: inherit;}
+#global_navigation_bar > ul > li > a:hover {color:red; text-decoration: underline;}
+
+section {width: 1000px; margin: 140px auto 0px; overflow: auto;}
+article {float: left; position: relative;}
+#article1 {margin: 0px 10px 10px 0px; width: 700px; height: 400px; background-image: url("700x400.png");}
+#article1 > p {right: 10px; bottom: 10px; position: absolute; font-size: 30px; font-weight: bold; color: white;}
+#article2 {margin-bottom: 10px; width: 290px; height: 190px; background-image: url("290x190.png");}
+#article2 > p {top: 50px; left: 10px; position: absolute; font-size: 30px; font-weight: bold; color: white;}
+.article3 {margin-bottom: 10px; width: 290px; height: 95px;}
+.article3 > p {right: 10px; bottom: 20px; position: absolute; font-size: 30px; font-weight: bold; color: white;}
+#article4_container {width: 490px; margin-right: 10px; float: left;}
+.article4 {margin-bottom: 10px; width: 490px; height: 240px;}
+.article4 > p.first {width: 300px; top: 160px; left: 50%; margin-left: -150px; position: absolute;}
+.article4 > p.second {right: 20px; bottom: 30px; font-size: 30px; color: gold; font-weight: bold; position: absolute;}
+#article5 {margin-bottom: 10ox; width: 500px; height: 490px; background-image: url("500x490.png");}
+#article6 {width: 1000px; height: 371px; margin-bottom: 10px; background-image: url("1000x371.png");}
+#article6 > p {font-size: 50px; color: white; font-weight: bold; text-shadow: 0px 0px 10px gray; 
+    top: 50%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap; position: absolute;}
+#article7 {width: 1000px; height: 361px; background-image: url("1000x361.png");}
+#article7 > p {width: 450px; height: 150px; right: 30px; bottom: 40px; position: absolute; font-size:20px; color: white;}
+#article7 > p > .highlight {font-size: 30px; font-weight: bold;}
